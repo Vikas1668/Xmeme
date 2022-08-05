@@ -51,14 +51,15 @@ public class MemesController {
     return ResponseEntity.ok().body(getMemesResponse.getMemes());
   }
 
-  @PostMapping(value = "", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+  @PostMapping(value = "", produces = MediaType.APPLICATION_JSON_VALUE,
+      consumes = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<PostMemesResponse> postMeme(
       @RequestBody PostMemesRequest postMemesRequest) {
     
     if (
-        postMemesRequest.getName().strip().isEmpty()
-        || postMemesRequest.getUrl().strip().isEmpty()
-        || postMemesRequest.getCaption().strip().isEmpty()
+        postMemesRequest.getName().trim().isEmpty()
+        || postMemesRequest.getUrl().trim().isEmpty()
+        || postMemesRequest.getCaption().trim().isEmpty()
     ) {
       throw new IllegalArgumentException("Name, Url and Caption cannot be empty");
     }
