@@ -1,10 +1,7 @@
-This file can be used as a template for initializing and running spring projects.
+Xmeme is the backend of a meme application that lets users post memes, get a list of top 100 memes posted by users using the application. 
 
-What's included: 
-1. Gradle file created from start.spring.io
-2. Plugins for Spotbugs, Checkstyle and Jacoco included
-3. Other dependencies like Mongo, MySql and redis.
-4. Dockerfile to start mongo server and run the spring boot application within.
+This RESTful API has been built using spring boot following the MVCS architecure, using MongoDB as the data source. Data is exchanged in JSON format.
+Swagger and Docker has also been configured. 
 
 Usage - 
 
@@ -21,6 +18,7 @@ To build docker image, use the command below - `docker build -t your_tag_name  .
 
 To run the generated container, use this command - `docker run -p 8080:8081 your_tag_name`. This will run the server on 8080 port. You can change the ports as per your needs. 
 
+Once the application is running, swagger UI can be accessed from `http://localhost:<port no>/swagger-ui/` (The / at the end is important)
 
 License - 
 While this repository is licensed under APACHE 2.0 license, It is mandatory for users to share the readme.md and License file along with the changes they do in the contents.
