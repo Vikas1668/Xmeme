@@ -8,4 +8,4 @@ ps -aux | grep mongod
 cd /code/sample-data
 ./load-sample-data.sh
 cd -
-java -jar /code/build/libs/spring-starter-0.0.1-SNAPSHOT.jar
+java -jar /code/build/libs/Xmeme-0.0.1-SNAPSHOT.jar

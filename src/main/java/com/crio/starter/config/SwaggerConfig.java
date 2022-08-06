@@ -19,7 +19,7 @@ public class SwaggerConfig {
   private String version = "0.0.1-SNAPSHOT";
   private String description = "Memes APIs documentation";
   private String contactName = "Vikas Choudhary";
-  private String contactEmail = "Vikas4.Choudahary@ril.com";
+  private String contactEmail = "Vikas4.Choudhary@ril.com";
 
   @Bean
   public Docket api() {
